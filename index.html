@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NGO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="nav-bar">
+            <div class="logo">
+                Ummed Ki Kiran
+            </div>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="donate-btn" onclick="openDonateModal()">Donate</button></li>
+            </ul>
+        </div>
+        <div class="hero-section" id="home">
+            <div class="hero-content">
+                <h1>Umeed Ki Kiran</h1>
+                <p>Every child deserves education, dignity and hope for a brighter future.</p>
+                <button class="donate-btn" onclick="openDonateModal()">Donate Now</button>
+            </div>
+        </div>
+        <div id="donateModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeDonateModal()">&times;</span>
+                <h2>Support Our NGO</h2>
+                <p><strong>UPI ID : </strong>yourupi@paytm</p>
+                <img src="Images/qr.png" alt="OQ Code" width="200">
+                <br><br>
+                <button onclick="copyUPI()">Copy UPI ID</button>
+            </div>
+
+        </div>
+        <div class="about-section" id="about">
+            <h2>About Us</h2>
+            <p>
+        <strong>Turning Compassion into Action</strong><br><br>
+
+        For over a year, Ummed Ki Kiran Foundation has been working
+        on the ground to support underprivileged children and families.
+
+        From celebrating <strong>2000+ birthdays</strong> with joy and dignity
+        to distributing educational kits and essential resources, we are
+        committed to creating brighter futures and stronger communities.
+    </p>
+        </div>
+
+        <div class="contact-section" id="contact">
+            <h2>Contact Us</h2>
+
+            <div class="contact-container">
+
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+
+                    <p>📍 Varanasi, Uttar Pradesh, India</p>
+                    <p>📧 ayushsinghas566@gmail.com</p>
+                    <p>📞 +91 8808225159</p>
+
+                    <p>
+                        We'd love to hear from you. Whether you'd like to
+                        volunteer, donate, or collaborate, feel free to reach out.
+                    </p>
+                </div>
+
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" id="name" required>
+                    <input type="email" placeholder="Your Email" id="email" required>
+                    <textarea id="message" placeholder="Your Message" rows="5"></textarea>
+
+                    <button type="button" class="donate-btn" onclick="sendWhatsApp()">
+                        Send Message
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
